@@ -83,8 +83,9 @@ public class Customspeed {
     public static MinecraftServer world;
     @SubscribeEvent
     public void getworld(ServerStartedEvent event){
-        System.out.println("///////////////////////////////////////////////////////////////////////\n////////////////////////////////////////////////////////:");
         world=event.getServer();
         world.getGameRules();
+
     }
+
 }

@@ -3,11 +3,13 @@
   "minVersion": "0.8",
   "package": "antio789.customspeed.mixin",
   "compatibilityLevel": "JAVA_17",
+  "refmap": "mixins.customspeed.refmap.json",
   "mixins": [
     "villagermixin",
     "AdultAnimalTimer",
     "BabyAnimalTimer",
-    "Spawnerwrite"
+    "Spawnerwrite",
+    "foxtimer"
   ],
   "client": [
 

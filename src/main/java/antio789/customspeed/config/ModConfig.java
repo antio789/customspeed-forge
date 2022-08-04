@@ -18,8 +18,8 @@ public class ModConfig {
 
     private static final int villager_adult = 150;
     private static final int villager_baby = 600;
-    private static final int animal_adult = 1;
-    private static final int animal_baby = 1;
+    private static final int animal_adult = 150;
+    private static final int animal_baby = 600;
     private static final int spawnerspeed = 20;
 
     public static int getMinspawndelay() {
