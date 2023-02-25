@@ -3,11 +3,10 @@ package antio789.customspeed;
 import com.mojang.blaze3d.platform.InputConstants;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
-import net.minecraft.network.chat.TranslatableComponent;
+import net.minecraft.network.chat.Component;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.InputEvent;
 import net.minecraftforge.client.settings.KeyConflictContext;
-import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -31,7 +30,7 @@ public class clientevent {
         public static void input(InputEvent event) {
             if (help.consumeClick()) {
                 assert Minecraft.getInstance().player != null;
-                Minecraft.getInstance().player.displayClientMessage(new TranslatableComponent(Customspeed.modid + ".config.use"), false);
+                Minecraft.getInstance().player.displayClientMessage(Component.translatable(Customspeed.modid + ".config.use"), false);
             }
         }
     }
